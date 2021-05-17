@@ -17,12 +17,19 @@ class Book:
         self.publish_date = publish_date
 
     def __repr__(self):
-        return f'<<{self.ISBN}: {self.name} : {self.author} : {self.publisher} : {self.publish_date}>>'
+        return f'<<{self.ISBN}: {self.name} , {self.author} , {self.publisher} , {self.publish_date}>>'
 
 
 with open('book.pkl', 'rb') as f:
     books = pickle.load(f)
 print(books)
+
+for i in books:
+    # i.
+
+    print(i)
+
+
 
 
 
